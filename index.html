@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+
+<body>
+    <div class="video-background">
+        <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-content">
+            <div id="question-1" class="active">
+                <div class="title">你喜歡甜味還是苦味？</div>
+                <div class="answer" goto="question-2">甜味</div>
+                <div class="answer" goto="question-3">苦味</div>
+            </div>
+
+            <div id="question-2">
+                <div class="title">你真係鍾意甜味？</div>
+                <div class="answer" goto="ending-1">係阿！</div>
+                <div class="answer" goto="question-1">唔係啵</div>
+            </div>
+
+            <div id="question-3">
+                <div class="title">你真係鍾意苦味？</div>
+                <div class="answer" goto="ending-2">係阿！</div>
+                <div class="answer" goto="question-1">唔係啵</div>
+				<div class="answer" goto="ending-1">
+					<img src="https://cdn.bulbagarden.net/upload/thumb/6/63/Pokk%C3%A9n_Pikachu_Libre.png/220px-Pokk%C3%A9n_Pikachu_Libre.png"/>
+					Pika!
+				</div>
+            </div>
+
+            <div id="ending-1">
+                <div class="title">好啦, 就請你飲無糖花茶啦！</div>
+                <div class="description">
+                    即刻登入乜乜柒柒買野啦。
+                    <a href="https://github.com/tommybbee/TerryChaForm">Check Here</a>
+                </div>
+            </div>
+
+            <div id="ending-2">
+                <div class="title">走啦你, 呢喥冇你要既野</div>
+                <div class="description">
+                    或者去
+                    <a href="https://github.com/tommybbee/TerryChaForm">呢喥</a>
+                    睇下有咩乜乜柒柒買啦。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
